@@ -5,7 +5,7 @@ GOCMD=go
 
 wire:
 	@command -v wire >/dev/null 2>&1 || $(GOCMD) install github.com/google/wire/cmd/wire@latest
-	@cd cmd/api && $(WIRECMD)
+	@cd internal/infrastructure && $(WIRECMD)
 
 run:
 	cd cmd && $(GOCMD) run main.go wire_gen.go

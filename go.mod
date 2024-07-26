@@ -3,6 +3,7 @@ module github.com/dmarins/stress-test-challenge-go
 go 1.22.5
 
 require (
+	github.com/google/wire v0.6.0
 	github.com/stretchr/testify v1.9.0
 	go.uber.org/mock v0.4.0
 )
