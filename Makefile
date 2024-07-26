@@ -25,6 +25,3 @@ tests: fmt test-clean
 
 run:
 	cd cmd && $(GOCMD) run main.go --url=http://google.com --requests=20 --concurrency=10
-
-build:
-	docker build -t stress-test .
