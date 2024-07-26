@@ -9,10 +9,10 @@ import (
 )
 
 type StressTest struct {
-	HttpClient http.HttpClient
+	HttpClient http.HttpClientInterface
 }
 
-func NewStressTest(httpClient http.HttpClient) *StressTest {
+func NewStressTest(httpClient http.HttpClientInterface) *StressTest {
 	return &StressTest{
 		HttpClient: httpClient,
 	}
